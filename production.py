@@ -87,11 +87,11 @@ def ParsSpent(num):
                                int(0)))
     return pars_spent
     
-def Result(tup, tup2):
+def Result(pars_lmt, pars_spt):
     result_tab.clear()    
     print("""Сравниваем значения и готовим сообщения""")
-    for id, name, limit in tup:
-        for id2, spent in tup2:
+    for id, name, limit in pars_lmt:
+        for id2, spent in pars_spt:
             if id == id2:
                 balance = limit - spent
                 if balance < money:
