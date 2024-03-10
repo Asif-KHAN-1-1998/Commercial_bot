@@ -59,7 +59,7 @@ def ParsLimit():
 
 def ParsSpent(num):
     pars_spent.clear()
-    print(""" Парсим данные с API """)
+    print(""" Парсим затраты с API """)
     scr = ', '.join(num)
     method = 'ads.getStatistics'
     client = 'client'
